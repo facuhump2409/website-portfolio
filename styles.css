@@ -411,6 +411,53 @@ button {
   padding-block: clamp(5rem, 16vh, 10rem) clamp(4rem, 10vh, 7rem);
 }
 
+/* Circular avatar sitting on a stack of offset discs, echoing the reference.
+Left-aligned rather than centred, to stay in the hero's column. */
+.portrait {
+  position: relative;
+  width: clamp(84px, 10vw, 118px);
+  aspect-ratio: 1;
+  margin-bottom: var(--s3);
+}
+
+.portrait::before,
+.portrait::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: 50%;
+  background: var(--raised);
+  border: 1px solid var(--line);
+}
+
+.portrait::before {
+  transform: translateY(15%) scale(0.93);
+}
+
+.portrait::after {
+  transform: translateY(7%) scale(0.97);
+}
+
+.portrait img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  filter: grayscale(1) contrast(1.05);
+  transition:
+    filter 0.5s var(--ease),
+    transform 0.4s var(--ease);
+}
+
+.portrait:hover img {
+  filter: grayscale(0);
+  transform: translateY(-2px);
+}
+
 .hero h1 {
   max-width: 15ch;
 }
