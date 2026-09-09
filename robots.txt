@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.facundo-humphreys.dev/sitemap.xml
+Sitemap: https://facundo-humphreys.dev/sitemap.xml
