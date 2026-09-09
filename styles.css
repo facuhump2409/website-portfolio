@@ -91,10 +91,15 @@ body {
   kills position:sticky for the nav and the pinned method visual. */
 }
 
-/* Anchor targets clear the sticky nav instead of hiding underneath it. */
-:target,
+/* Anchor targets clear the sticky nav instead of hiding underneath it.
+
+An anchor aligns the section's *border box*, so a plain positive offset lands
+the viewport at the top of the section's padding — leaving up to 11rem of dead
+space above the heading. Subtracting that padding back out (the calc goes
+negative on tall viewports, which is valid) parks the heading just below the
+nav instead. Keep the 7rem in step with .site-nav's height. */
 section[id] {
-  scroll-margin-top: 5.5rem;
+  scroll-margin-top: calc(7rem - clamp(6rem, 14vh, 11rem));
 }
 
 h1,
