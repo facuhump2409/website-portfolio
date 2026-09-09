@@ -1,127 +1,729 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Facundo Humphreys - Tech talks, projects, and professional portfolio." />
-  <title>Facundo Humphreys | Tech Talks & Projects</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="hero">
-    <nav class="container nav">
-      <a class="logo" href="#top">Facundo Humphreys</a>
-      <div class="nav-links">
-        <a href="#talks">Tech Talks</a>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <section class="container hero-content" id="top">
-      <p class="kicker">Senior Full-Stack Engineer · Technical Communicator</p>
-      <h1>Turning technical ideas into products teams can trust and scale.</h1>
-      <p class="summary">
-        Full-stack engineer with 6+ years shipping production systems across fintech and consumer products:
-        from customer-facing interfaces and data models to reliable backend services, CI/CD, cloud deployment, and production operations.
-      </p>
-      <div class="actions">
-        <a class="btn btn-primary" href="https://www.linkedin.com/in/facundo-humphreys/" target="_blank" rel="noopener noreferrer">View LinkedIn</a>
-        <a class="btn btn-secondary" href="https://github.com/facuhump2409" target="_blank" rel="noopener noreferrer">View GitHub</a>
-      </div>
-    </section>
-  </header>
+    <title>Facundo Humphreys — AI Lead Engineer</title>
+    <meta
+      name="description"
+      content="AI Lead Engineer in Buenos Aires. Six years shipping production systems at 100M+ user scale — fintech compliance, event-driven data platforms, sub-200ms money movement — now building agents that do real work inside engineering organisations. Five sectors in six years: travel, banking, messaging, streaming and lending."
+    />
+    <meta name="author" content="Facundo Humphreys" />
+    <link rel="canonical" href="https://www.facundo-humphreys.dev/" />
 
-  <main>
-    <section class="container section" id="talks">
-      <div class="section-heading">
-        <h2>Tech Talks & Knowledge Sharing</h2>
-        <p>Topics aligned with my recent delivery work in fintech, distributed systems, and product engineering.</p>
-      </div>
-      <div class="cards three-col">
-        <article class="card">
-          <h3>Fintech Systems at Scale</h3>
-          <p>Lessons from shipping compliance and payment-related systems with strong reliability and observability requirements.</p>
-          <a href="https://www.linkedin.com/in/facundo-humphreys/" target="_blank" rel="noopener noreferrer">Explore LinkedIn posts</a>
-        </article>
-        <article class="card">
-          <h3>Data & Event Streaming</h3>
-          <p>Architecture insights around Kafka, Spark, and scalable backend services for high-throughput product teams.</p>
-          <a href="https://www.linkedin.com/in/facundo-humphreys/" target="_blank" rel="noopener noreferrer">Open talk profile</a>
-        </article>
-        <article class="card">
-          <h3>Cloud-Native Delivery</h3>
-          <p>Practical approaches for CI/CD, Kubernetes, and operating production services across AWS and GCP.</p>
-          <a href="#contact">Invite me to speak</a>
-        </article>
-      </div>
-    </section>
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Facundo Humphreys — AI Lead Engineer" />
+    <meta
+      property="og:description"
+      content="Production AI, built by someone who's run production. 100M+ users served, 50k+ daily transactions under 200ms, six years on call."
+    />
+    <meta property="og:url" content="https://www.facundo-humphreys.dev/" />
+    <meta property="og:image" content="https://www.facundo-humphreys.dev/assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Facundo Humphreys — AI Lead Engineer" />
+    <meta
+      name="twitter:description"
+      content="Production AI, built by someone who's run production."
+    />
 
-    <section class="container section" id="projects">
-      <div class="section-heading">
-        <h2>Latest Projects & Technical Analysis</h2>
-        <p>Examples of hands-on work and the engineering decisions behind each build.</p>
-      </div>
-      <div class="cards">
-        <article class="card project">
-          <h3>Anti-Money-Laundering Loan Compliance Platform</h3>
-          <p>At RyzLabs, I implemented AML controls for loan disbursements to meet regulatory compliance requirements.</p>
-          <ul>
-            <li><strong>Impact:</strong> reduced compliance risk on critical money movement flows.</li>
-            <li><strong>Stack:</strong> Scala/Java services, PostgreSQL, Kafka, CI/CD, Kubernetes, production monitoring.</li>
-          </ul>
-          <a href="https://www.linkedin.com/in/facundo-humphreys/" target="_blank" rel="noopener noreferrer">See more on LinkedIn</a>
-        </article>
+    <!-- SVG first: it inverts with the OS theme. ICO/PNG are the fallbacks
+    for Safari's tab bar and the iOS home screen. -->
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="assets/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
 
-        <article class="card project">
-          <h3>Large-Scale Data Pipeline Optimization</h3>
-          <p>At Qubika (Disney+), I built Scala/Kotlin systems serving 100M+ users and improved Spark pipeline latency by 40%.</p>
-          <ul>
-            <li><strong>Impact:</strong> faster data processing for high-scale product workflows.</li>
-            <li><strong>Stack:</strong> Scala, Kotlin, Spark, AWS, event streaming, production operations.</li>
-          </ul>
-          <a href="https://www.linkedin.com/in/facundo-humphreys/" target="_blank" rel="noopener noreferrer">See more on LinkedIn</a>
-        </article>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
 
-        <article class="card project">
-          <h3>DAO Governance Framework (2024)</h3>
-          <p>Built a TypeScript/Solidity platform for decentralized organizations with smart contracts, React UI, and Ethereum deployment.</p>
-          <ul>
-            <li><strong>Impact:</strong> end-to-end delivery from blockchain logic to user-facing product interface.</li>
-            <li><strong>Stack:</strong> TypeScript, React, Solidity, Ethereum, smart contracts.</li>
-          </ul>
-          <a href="https://github.com/facuhump2409" target="_blank" rel="noopener noreferrer">View GitHub profile</a>
-        </article>
-      </div>
-    </section>
+    <!-- Runs before first paint: a deferred script would flash white at dark-mode
+visitors. OS "light" opts into light; anything else — including no signal
+at all — lands on dark. -->
+    <script>
+      (function () {
+        var root = document.documentElement;
+        try {
+          var saved = localStorage.getItem("theme");
+          root.dataset.theme =
+            saved || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        } catch (e) {
+          root.dataset.theme = "dark";
+        }
+      })();
+    </script>
 
-    <section class="container section" id="about">
-      <div class="section-heading">
-        <h2>Why Work With Me</h2>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Facundo Humphreys",
+        "jobTitle": "AI Lead Engineer",
+        "email": "mailto:facu.humphreys@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Buenos Aires",
+          "addressCountry": "AR"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Universidad Tecnológica Nacional (UTN)"
+        },
+        "knowsAbout": [
+          "Large language models",
+          "AI systems in production",
+          "AI agents",
+          "Agentic coding tools",
+          "LLM cost and latency optimisation",
+          "Distributed systems",
+          "Event streaming",
+          "Apache Kafka",
+          "Apache Spark",
+          "Scala",
+          "Kubernetes",
+          "Fintech compliance",
+          "Digital banking",
+          "Streaming media",
+          "Travel technology"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/facundo-humphreys/",
+          "https://github.com/facuhump2409"
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-nav" id="top">
+      <div class="container nav-inner">
+        <a class="brand" href="#top">Facundo Humphreys <span>— AI Lead Engineer</span></a>
+
+        <nav class="nav-links" aria-label="Sections">
+          <a href="#ai">AI</a>
+          <a href="#experience">Experience</a>
+          <a href="#speaking">Speaking</a>
+          <a href="#beyond">Beyond</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-pressed="false"
+          aria-label="Switch to light theme"
+        >
+          <svg
+            class="icon-moon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+          </svg>
+          <svg
+            class="icon-sun"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+            />
+          </svg>
+        </button>
       </div>
-      <div class="highlight">
-        <p>
-          I combine product-minded software delivery with strong technical execution across TypeScript, React, Scala, Kotlin, Java, Python, and Golang.
-          I have delivered fintech compliance systems, high-scale data pipelines, real-time messaging services, and cloud-native production platforms.
+    </header>
+
+    <main id="main">
+      <!-- ================= Hero ================= -->
+      <section class="container hero">
+        <p class="eyebrow" data-reveal style="--i: 0">AI Lead Engineer · Buenos Aires, Argentina</p>
+        <h1 data-reveal style="--i: 1">
+          Production AI, built by someone who&rsquo;s run production.
+        </h1>
+        <p class="lede" data-reveal style="--i: 2">
+          Six years across five sectors &mdash; Chile&rsquo;s first neobank, a 100M-user streaming
+          platform, enterprise travel tech. Compliance systems, event-driven data platforms,
+          sub-200ms money movement. I bring that same discipline to AI: the pipelines, the cost
+          ceilings, and the pager.
         </p>
-      </div>
-    </section>
+        <div class="actions" data-reveal style="--i: 3">
+          <a class="btn btn--primary" href="#contact">
+            Let&rsquo;s talk
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+          <a class="btn btn--ghost" href="assets/facundo-humphreys-cv.pdf" download>
+            Download CV
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M12 3v12M7 11l5 5 5-5M4 21h16" />
+            </svg>
+          </a>
+          <a
+            class="btn btn--ghost"
+            href="https://www.linkedin.com/in/facundo-humphreys/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a
+            class="btn btn--ghost"
+            href="https://github.com/facuhump2409"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+        </div>
+      </section>
 
-    <section class="container section" id="contact">
-      <div class="section-heading">
-        <h2>Let’s Build Something Great</h2>
-        <p>If you're hiring for engineering roles, I'd be glad to discuss how I can contribute from Buenos Aires, Argentina (remote-friendly).</p>
+      <!-- ================= Proof band ================= -->
+      <section class="proof" aria-label="Track record">
+        <div class="container">
+          <div class="proof-grid">
+            <div class="proof-item" data-reveal style="--i: 0">
+              <span class="proof-value" data-count="100" data-suffix="M+">100M+</span>
+              <span class="proof-label">users served</span>
+            </div>
+            <div class="proof-item" data-reveal style="--i: 1">
+              <span class="proof-value" data-count="50" data-suffix="k+">50k+</span>
+              <span class="proof-label">daily transactions under 200ms</span>
+            </div>
+            <div class="proof-item" data-reveal style="--i: 2">
+              <span class="proof-value" data-count="40" data-suffix="%">40%</span>
+              <span class="proof-label">data-pipeline latency removed</span>
+            </div>
+            <div class="proof-item" data-reveal style="--i: 3">
+              <span class="proof-value" data-count="6" data-suffix="+">6+</span>
+              <span class="proof-label">years, startup to enterprise</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= AI in production ================= -->
+      <section class="container section section--flush" id="ai">
+        <p class="eyebrow" data-reveal>AI in production</p>
+        <h2 data-reveal style="--i: 1">The model was never the hard part.</h2>
+        <p class="section-intro" data-reveal style="--i: 2">
+          Anyone can get a demo working. Keeping an agent useful once it touches real systems is a
+          distributed-systems problem &mdash; permissions, cost ceilings, latency budgets, what it
+          does when the model is wrong, and someone carrying the pager afterwards. I build agents
+          that do real work inside engineering organisations, on the same production foundations I
+          have operated for six years.
+        </p>
+
+        <div class="card-grid">
+          <article class="card" data-reveal style="--i: 0">
+            <span class="card-tag">01</span>
+            <h3>Agents inside the delivery pipeline</h3>
+            <p>
+              Local agents built on Claude Code, Copilot and Codex, aimed at the parts of shipping
+              that actually cost time: code review, code generation, and deployment. Treated like
+              any other production dependency &mdash; standards around them, review gates in front
+              of them, and a clear view of where they stop being trustworthy.
+            </p>
+            <p class="card-meta">Claude Code &middot; GitHub Copilot &middot; Codex</p>
+          </article>
+
+          <article class="card" data-reveal style="--i: 1">
+            <span class="card-tag">02</span>
+            <h3>Property investment agent</h3>
+            <p>
+              A conversational agent over Buenos Aires rental listings. Paste a listing URL and it
+              answers the only two questions that matter to a buyer: is this priced as an
+              opportunity, and what annual yield would it actually return?
+            </p>
+            <p class="card-meta">Side project, in progress.</p>
+          </article>
+        </div>
+
+        <p class="section-intro" data-reveal style="--i: 3">
+          Built on Claude, GPT and self-hosted open-weight models, chosen per task rather than by
+          habit &mdash; and tuned for cost and latency, because an agent nobody can afford to run is
+          not in production.
+        </p>
+      </section>
+
+      <!-- ================= Method (pinned scroll) ================= -->
+      <section class="section method" id="method">
+        <div class="container">
+          <p class="eyebrow" data-reveal>Method</p>
+          <h2 data-reveal style="--i: 1">How I build AI that survives contact with production.</h2>
+
+          <div class="method-track">
+            <ol class="method-steps">
+              <li class="method-step" data-step="0">
+                <span class="method-num">01</span>
+                <div>
+                  <h3>Evals before features</h3>
+                  <p>
+                    If you can&rsquo;t measure the output, you&rsquo;re shipping vibes. The harness
+                    comes first, and it stays in CI.
+                  </p>
+                </div>
+              </li>
+              <li class="method-step" data-step="1">
+                <span class="method-num">02</span>
+                <div>
+                  <h3>The model is ten percent of it</h3>
+                  <p>
+                    Permissions, pipelines, cost ceilings, latency budgets, fallbacks. That is the
+                    system. The model is one component inside it.
+                  </p>
+                </div>
+              </li>
+              <li class="method-step" data-step="2">
+                <span class="method-num">03</span>
+                <div>
+                  <h3>Own it all the way to the pager</h3>
+                  <p>
+                    Prometheus and Grafana on AI systems, same as any other service. Shipping ends
+                    when it&rsquo;s observable, not when it merges.
+                  </p>
+                </div>
+              </li>
+            </ol>
+
+            <div class="method-visual" aria-hidden="true">
+              <div class="device">
+                <div class="device-lid">
+                  <div class="device-screen">
+                    <div class="screen-top"><i></i><i></i><i></i></div>
+                    <div class="screen-rows">
+                      <span class="screen-line" style="--w: 0.9"></span>
+                      <span class="screen-line" style="--w: 0.6"></span>
+                      <span class="screen-line" style="--w: 0.75"></span>
+                    </div>
+                    <div class="screen-chart">
+                      <span style="--h: 0.35"></span>
+                      <span style="--h: 0.55"></span>
+                      <span style="--h: 0.42"></span>
+                      <span style="--h: 0.72"></span>
+                      <span style="--h: 0.6"></span>
+                      <span style="--h: 0.88"></span>
+                      <span style="--h: 0.78"></span>
+                      <span style="--h: 1"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="device-base">
+                  <div class="device-pad"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Experience ================= -->
+      <section class="container section" id="experience">
+        <p class="eyebrow" data-reveal>Experience</p>
+        <h2 data-reveal style="--i: 1">Five sectors. Startup, mid-size, enterprise.</h2>
+        <p class="section-intro" data-reveal style="--i: 2">
+          Travel, banking, messaging, streaming, lending. Every one wanted something different: an
+          enterprise where the problem was fifteen legacy provider integrations; Chile&rsquo;s first
+          neobank, where the user count moved twentyfold underneath me; a platform pushing films and
+          series to a hundred million people. Dropping into an unfamiliar domain and being useful
+          quickly is the part that transfers &mdash; the stack has always been the easy half.
+        </p>
+
+        <div class="timeline">
+          <article class="role" data-reveal>
+            <div>
+              <p class="role-when">
+                Apr 2025 &mdash; Present <span class="role-where">Remote</span>
+              </p>
+            </div>
+            <div>
+              <h3 class="role-title">Senior Scala Engineer</h3>
+              <p class="role-org">RyzLabs (Tala)</p>
+              <p class="role-context">
+                Lending &middot; mid-size fintech, regulated money movement
+              </p>
+              <ul class="role-points">
+                <li>
+                  Implemented an <strong>anti-money-laundering system</strong> for loan
+                  disbursements to meet regulatory compliance requirements.
+                </li>
+                <li>
+                  Delivered Scala/Java services from PostgreSQL and Kafka design through CI/CD,
+                  Kubernetes, and production monitoring.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="role" data-reveal>
+            <div>
+              <p class="role-when">
+                Apr 2023 &mdash; Apr 2025 <span class="role-where">Remote</span>
+              </p>
+            </div>
+            <div>
+              <h3 class="role-title">Senior Software Engineer</h3>
+              <p class="role-org">Qubika (Disney+)</p>
+              <p class="role-context">
+                Streaming &middot; films and series to 100M+ users worldwide
+              </p>
+              <ul class="role-points">
+                <li>
+                  <strong>100M+ users served</strong> by the Scala/Kotlin systems I built; cut Spark
+                  data-pipeline latency by <strong>40%</strong>.
+                </li>
+                <li>
+                  Owned architecture, testing, event streaming, AWS deployment, and production
+                  operation.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="role" data-reveal>
+            <div>
+              <p class="role-when">
+                Apr 2023 &mdash; Dec 2023 <span class="role-where">United States</span>
+              </p>
+            </div>
+            <div>
+              <h3 class="role-title">Full Stack Engineer</h3>
+              <p class="role-org">MediaLab (Kik)</p>
+              <p class="role-context">Messaging &amp; streaming &middot; US consumer app</p>
+              <ul class="role-points">
+                <li>
+                  Shipped Java/Golang <strong>real-time messaging services</strong> and React
+                  features; operated multi-region Kubernetes across AWS and GCP.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="role" data-reveal>
+            <div>
+              <p class="role-when">
+                Jan 2022 &mdash; Apr 2023 <span class="role-where">Argentina</span>
+              </p>
+            </div>
+            <div>
+              <h3 class="role-title">Full Stack Developer</h3>
+              <p class="role-org">Tenpo (Fintech)</p>
+              <p class="role-context">
+                Banking &middot; Chile&rsquo;s first neobank, 100K &rarr; ~2M users
+              </p>
+              <ul class="role-points">
+                <li>
+                  Built PayPal settlement flows processing
+                  <strong>50k+ daily transactions under 200ms</strong>, plus customer-facing
+                  accounting dashboards.
+                </li>
+                <li>
+                  Stayed load-bearing while the platform grew from
+                  <strong>100K to nearly 2M users</strong> &mdash; what I built was stress-tested by
+                  growth rather than by a roadmap.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="role" data-reveal>
+            <div>
+              <p class="role-when">
+                Jan 2021 &mdash; Jan 2022 <span class="role-where">Argentina</span>
+              </p>
+            </div>
+            <div>
+              <h3 class="role-title">Java Developer</h3>
+              <p class="role-org">Despegar (Travel Tech)</p>
+              <p class="role-context">Travel &amp; tourism &middot; LATAM enterprise</p>
+              <ul class="role-points">
+                <li>
+                  Delivered <strong>15+ flight-provider integrations</strong> and reduced
+                  booking-system latency by <strong>30%</strong>.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="education" data-reveal>
+          <span>Systems Engineering &mdash; Universidad Tecnológica Nacional (UTN)</span>
+          <span>2017 &mdash; 2022</span>
+        </div>
+      </section>
+
+      <!-- ================= Speaking ================= -->
+      <section class="container section" id="speaking">
+        <p class="eyebrow" data-reveal>Speaking</p>
+        <h2 data-reveal style="--i: 1">
+          Explaining hard systems to rooms that don&rsquo;t build them yet.
+        </h2>
+
+        <div class="talk" data-reveal>
+          <button
+            class="talk-media"
+            type="button"
+            data-video="UAVQBd0LXbQ"
+            aria-label="Play: Demystifying Blockchain DAOs — a practical roadmap"
+          >
+            <img
+              src="https://i.ytimg.com/vi/UAVQBd0LXbQ/maxresdefault.jpg"
+              alt="Facundo Humphreys presenting at ORT University"
+              loading="lazy"
+              width="1280"
+              height="720"
+            />
+            <span class="talk-play">
+              <span>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </span>
+            </span>
+          </button>
+
+          <div class="talk-body">
+            <p class="talk-where">ORT University × Qubika · guest lecture</p>
+            <h3>Demystifying Blockchain DAOs: a practical roadmap</h3>
+            <p>
+              A guest lecture for engineering students on decentralised governance &mdash; what a
+              DAO actually is underneath the terminology, and the practical path from smart contract
+              to something people can use.
+            </p>
+            <div class="talk-links">
+              <a
+                class="link-arrow"
+                href="https://www.youtube.com/watch?v=UAVQBd0LXbQ"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Watch the talk
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M7 17L17 7M9 7h8v8" />
+                </svg>
+              </a>
+              <a
+                class="link-arrow"
+                href="https://www.linkedin.com/posts/facundo-humphreys_ortuniversity-qubika-blockchain-activity-7207030205478060032-i0h0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Read the post
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M7 17L17 7M9 7h8v8" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="topics" data-reveal>
+          <p class="lede" style="font-size: var(--step-small)">Available to speak on:</p>
+          <ul class="topics-list">
+            <li>Putting AI into production</li>
+            <li>Agents inside the software delivery pipeline</li>
+            <li>Event-driven architecture at scale</li>
+            <li>Fintech compliance engineering</li>
+            <li>Blockchain &amp; DAO governance</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ================= Skills ================= -->
+      <section class="container section" id="skills">
+        <p class="eyebrow" data-reveal>Capabilities</p>
+        <h2 data-reveal style="--i: 1">The toolkit.</h2>
+
+        <div class="skills">
+          <div class="skill-group" data-reveal style="--i: 0">
+            <h3>AI</h3>
+            <!-- TODO: replace with the models, providers and tooling you have actually used -->
+            <ul>
+              <li>LLM application design</li>
+              <li>Agent design &amp; tool calling</li>
+              <li>OpenAI SDK</li>
+              <li>Agentic coding tooling</li>
+              <li>Inference cost &amp; latency</li>
+            </ul>
+          </div>
+
+          <div class="skill-group" data-reveal style="--i: 1">
+            <h3>Build</h3>
+            <ul>
+              <li>TypeScript · React</li>
+              <li>Scala · Kotlin · Java</li>
+              <li>Python · FastAPI</li>
+              <li>Golang</li>
+              <li>Spring Boot</li>
+            </ul>
+          </div>
+
+          <div class="skill-group" data-reveal style="--i: 2">
+            <h3>Systems</h3>
+            <ul>
+              <li>PostgreSQL</li>
+              <li>Kafka · Spark</li>
+              <li>AWS · GCP</li>
+              <li>Docker · Kubernetes</li>
+              <li>CI/CD · Prometheus/Grafana</li>
+            </ul>
+          </div>
+
+          <div class="skill-group" data-reveal style="--i: 3">
+            <h3>Blockchain</h3>
+            <ul>
+              <li>Solidity · Ethereum</li>
+              <li>Smart contracts</li>
+              <li>DAO governance</li>
+              <li>OpenZeppelin</li>
+              <li>web3.js</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Beyond coding ================= -->
+      <section class="container section" id="beyond">
+        <p class="eyebrow" data-reveal>Beyond coding</p>
+        <h2 data-reveal style="--i: 1">Things I&rsquo;m equally serious about.</h2>
+
+        <div class="beyond-grid">
+          <figure class="beyond-item" data-reveal style="--i: 0">
+            <img
+              src="assets/beyond-snowboard.jpg"
+              alt="Facundo strapped into a snowboard on a mountain slope"
+              width="1200"
+              height="1600"
+              loading="lazy"
+            />
+            <figcaption class="beyond-caption">
+              <h3>Snowboarding</h3>
+              <p>Every winter, as high as the lift goes</p>
+            </figcaption>
+          </figure>
+
+          <figure class="beyond-item" data-reveal style="--i: 1">
+            <img
+              src="assets/beyond-marathon.jpg"
+              alt="Facundo biting his finisher medal after a half marathon"
+              width="1200"
+              height="1600"
+              loading="lazy"
+            />
+            <figcaption class="beyond-caption">
+              <h3>Running</h3>
+              <p>Medio Maratón, Mar del Plata</p>
+            </figcaption>
+          </figure>
+
+          <figure class="beyond-item" data-reveal style="--i: 2">
+            <img
+              src="assets/beyond-kitchen.jpg"
+              alt="Facundo plating a dish on the line in a professional kitchen"
+              width="1200"
+              height="1600"
+              loading="lazy"
+            />
+            <figcaption class="beyond-caption">
+              <h3>Cooking</h3>
+              <p>Mise en place is just good system design</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <p class="beyond-note" data-reveal>
+          Also: surfing whenever there is cold water and no signal, and a lifelong, medically
+          inadvisable commitment to Boca Juniors.
+        </p>
+      </section>
+
+      <!-- ================= Contact ================= -->
+      <section class="container section contact" id="contact">
+        <p class="eyebrow" data-reveal>Contact</p>
+        <h2 data-reveal style="--i: 1">Let&rsquo;s build something that stays up.</h2>
+        <p class="section-intro" data-reveal style="--i: 2">
+          Open to <strong>AI Lead</strong> and <strong>Staff Engineer</strong> roles. Remote from
+          Buenos Aires, or relocating for the right team.
+        </p>
+        <p class="availability" data-reveal style="--i: 3">Available for new work</p>
+
+        <div class="actions" data-reveal style="--i: 4">
+          <a
+            class="btn btn--primary"
+            href="mailto:facu.humphreys@gmail.com?subject=Role%20opportunity%20%E2%80%94%20AI%20Lead%20Engineer"
+          >
+            facu.humphreys@gmail.com
+          </a>
+          <a
+            class="btn btn--ghost"
+            href="https://www.linkedin.com/in/facundo-humphreys/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a class="btn btn--ghost" href="assets/facundo-humphreys-cv.pdf" download>
+            Download CV
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>&copy; 2026 Facundo Humphreys</span>
+        <span>Buenos Aires, Argentina</span>
       </div>
-      <div class="contact-links">
-        <a class="btn btn-primary" href="https://www.linkedin.com/in/facundo-humphreys/" target="_blank" rel="noopener noreferrer">Message on LinkedIn</a>
-        <a class="btn btn-secondary" href="mailto:facu.humphreys@gmail.com">Send Email</a>
-        <a class="btn btn-secondary" href="https://github.com/facuhump2409" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
-      </div>
-    </section>
-  </main>
-</body>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
 </html>
