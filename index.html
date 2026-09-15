@@ -38,9 +38,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript
+      ><link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+        rel="stylesheet"
+    /></noscript>
+    <link rel="preload" as="image" href="assets/portrait.jpg" />
     <link rel="stylesheet" href="styles.css" />
 
     <!-- Runs before first paint: a deferred script would flash white at dark-mode
@@ -156,7 +164,7 @@ at all — lands on dark. -->
       <!-- ================= Hero ================= -->
       <section class="container hero">
         <div class="portrait" data-reveal style="--i: 0">
-          <img src="assets/portrait.jpg" alt="Facundo Humphreys" width="480" height="480" />
+          <img src="assets/portrait.jpg" alt="Facundo Humphreys" width="480" height="480" fetchpriority="high" />
         </div>
         <p class="eyebrow" data-reveal style="--i: 1">AI Lead Engineer · Buenos Aires, Argentina</p>
         <h1 data-reveal style="--i: 2">

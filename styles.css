@@ -14,7 +14,7 @@
   --raised: #1c1c1e;
   --text: #ffffff;
   --muted: #8a8a8e;
-  --faint: #5a5a5e;
+  --faint: #7c7c7e;
   --line: #232323;
   --scrim: rgba(10, 10, 10, 0.72);
 
@@ -50,8 +50,8 @@
   --surface: #ffffff;
   --raised: #f2f2f2;
   --text: #0a0a0a;
-  --muted: #6e6e73;
-  --faint: #a1a1a6;
+  --muted: #6a6a6f;
+  --faint: #707074;
   --line: #e5e5e5;
   --scrim: rgba(250, 250, 250, 0.72);
 }
