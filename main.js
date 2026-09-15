@@ -81,7 +81,7 @@ gets stranded looking at elements stuck at opacity 0. */
       { passive: true },
     );
 
-    updateNav();
+    requestAnimationFrame(updateNav);
   }
 
   /* --- Reveal on scroll -------------------------------------------------- */
@@ -192,7 +192,7 @@ gets stranded looking at elements stuck at opacity 0. */
     new IntersectionObserver(
       function (entries) {
         inView = entries[0].isIntersecting;
-        if (inView) updateProgress();
+        if (inView) requestAnimationFrame(updateProgress);
       },
       { rootMargin: "100px 0px" },
     ).observe(method);
@@ -201,12 +201,12 @@ gets stranded looking at elements stuck at opacity 0. */
     window.addEventListener(
       "resize",
       function () {
-        if (inView) updateProgress();
+        if (inView) requestAnimationFrame(updateProgress);
       },
       { passive: true },
     );
 
-    updateProgress();
+    requestAnimationFrame(updateProgress);
   } else if (steps.length) {
     steps[0].classList.add("is-active");
   }
